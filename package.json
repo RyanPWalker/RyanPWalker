@@ -59,6 +59,7 @@
   },
   "dependencies": {
     "animejs": "^3.0.1",
+    "granim": "^2.0.0",
     "react": "^16.8.1",
     "react-dom": "^16.8.1"
   },
