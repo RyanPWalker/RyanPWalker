@@ -1,15 +1,16 @@
 import React, { Component } from 'react';
-import '../less/FlipSwitch.less';
+import '../less/Skills.less';
 
-class FlipSwitch extends Component {
+class Skills extends Component {
     componentDidMount() {
 
     }
 
     render() {
         return (
+            <h2>Sweet Skills</h2>
         );
     }
 }
 
-export default FlipSwitch;
+export default Skills;
