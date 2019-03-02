@@ -64,39 +64,39 @@ class App extends Component {
     }
     render() {
         return (
-        <div className="App">
-            {this.renderComponent()}
-            <canvas id="canvas-interactive"></canvas>
-            <div className="flip-switch-container">
-                <button
-                    className={`btn-one ${this.state.active === 1 ? 'active' : ''}`}
-                    onClick={() => {
-                        this.state.granimInstance.changeState('default-state');
-                        this.setState({ active: 1 });
-                    }}
-                >
-                    1
-                </button>
-                <button
-                    className={`btn-two ${this.state.active === 2 ? 'active' : ''}`}
-                    onClick={() => {
-                        this.state.granimInstance.changeState('violet-state');
-                        this.setState({ active: 2 });
-                    }}
-                >
-                    2
-                </button>
-                <button
-                    className={`btn-three ${this.state.active === 3 ? 'active' : ''}`}
-                    onClick={() => {
-                        this.state.granimInstance.changeState('orange-state');
-                        this.setState({ active: 3 });
-                    }}
-                >
-                    3
-                </button>
+            <div className="App">
+                {this.renderComponent()}
+                <canvas id="canvas-interactive"></canvas>
+                <div className="flip-switch-container">
+                    <button
+                        className={`btn-one ${this.state.active === 1 ? 'active' : ''}`}
+                        onClick={() => {
+                            this.state.granimInstance.changeState('default-state');
+                            this.setState({ active: 1 });
+                        }}
+                    >
+                        1
+                    </button>
+                    <button
+                        className={`btn-two ${this.state.active === 2 ? 'active' : ''}`}
+                        onClick={() => {
+                            this.state.granimInstance.changeState('violet-state');
+                            this.setState({ active: 2 });
+                        }}
+                    >
+                        2
+                    </button>
+                    <button
+                        className={`btn-three ${this.state.active === 3 ? 'active' : ''}`}
+                        onClick={() => {
+                            this.state.granimInstance.changeState('orange-state');
+                            this.setState({ active: 3 });
+                        }}
+                    >
+                        3
+                    </button>
+                </div>
             </div>
-        </div>
         );
     }
 }
