@@ -29,15 +29,15 @@ class App extends Component {
                     ],
                     transitionSpeed: 6000
                 },
-                "violet-state": {
+                "orange-state": {
                     gradients: [
-                        ['#FF4E50', '#F9D423'],
-                        ['#e96443', '#f8b500'],
-                        ['#ee0979', '#ff6a00']
+                        ['#FF9000', '#F9D423'],
+                        ['#F2BB05', '#f8b500'],
+                        ['#FFAE00', '#ff6a00']
                     ],
                     transitionSpeed: 5000
                 },
-                "orange-state": {
+                "green-state": {
                     gradients: [
                         ['#093028', '#237A57'],
                         ['#43C6AC', '#F8FFAE'],
@@ -80,7 +80,7 @@ class App extends Component {
                     <button
                         className={`btn-two ${this.state.active === 2 ? 'active' : ''}`}
                         onClick={() => {
-                            this.state.granimInstance.changeState('violet-state');
+                            this.state.granimInstance.changeState('green-state');
                             this.setState({ active: 2 });
                         }}
                     >

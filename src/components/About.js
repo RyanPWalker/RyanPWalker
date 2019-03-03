@@ -8,7 +8,7 @@ class About extends Component {
 
     render() {
         return (
-            <h2>About</h2>
+            <h2 className="about-title">About</h2>
         );
     }
 }
