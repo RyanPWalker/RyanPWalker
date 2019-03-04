@@ -71,7 +71,7 @@ class Skills extends Component {
                         <a href="http://www.cplusplus.org/" target="blank" title="C++">
                             <i id="skills" title="C++" className="devicon-cplusplus-line-wordmark colored"></i>
                         </a>
-                        <a href="https://triforce.com" target="blank" title="The Legend of Zelda">
+                        <a href="https://www.zelda.com/about/" target="blank" title="The Legend of Zelda">
                             <Triforce />
                         </a>
                     </div>
