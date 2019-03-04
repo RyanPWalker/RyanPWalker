@@ -16,7 +16,7 @@ class ParticledTitle extends Component {
         var colors = ["#F55D3E","#FFB30F", "#ABFF4F","#29BF12", "#08BDBD"];
 
         const copy = 'Ryan Walker';
-        const copy2 = 'Front End Developer';
+        const copy2 = 'Web Developer';
 
         var ww = canvas.width = window.innerWidth;
         var wh = canvas.height = window.innerHeight;
