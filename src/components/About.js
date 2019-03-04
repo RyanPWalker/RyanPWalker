@@ -27,7 +27,7 @@ class About extends Component {
                             <FB />
                         </a>
                     </div>
-                    <img src="../assets/images/family.jpg" />
+                    <img src="https://github.com/RyanPWalker/RyanPWalker/blob/master/src/assets/images/family.jpg" alt="Me, my wife, and my dog Cody." />
                 </div>
             </Fragment>
         );
