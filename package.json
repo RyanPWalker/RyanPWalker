@@ -1,6 +1,6 @@
 {
   "name": "ryan",
-  "version": "0.0.0",
+  "version": "1.1.0",
   "private": true,
   "sideEffects": false,
   "repository": {
@@ -58,7 +58,6 @@
     "webpack-node-externals": "^1.7.2"
   },
   "dependencies": {
-    "animejs": "^3.0.1",
     "granim": "^2.0.0",
     "react": "^16.8.1",
     "react-dom": "^16.8.1"
