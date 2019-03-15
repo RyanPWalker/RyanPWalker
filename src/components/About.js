@@ -5,6 +5,7 @@ import '../less/About.less';
 import Github from '../assets/images/social/github';
 import FB from '../assets/images/social/fb';
 import Email from '../assets/images/social/email';
+import LinkedIn from '../assets/images/social/linkedin';
 
 class About extends Component {
     componentDidMount() {
@@ -26,6 +27,9 @@ class About extends Component {
                         <a href="https://www.facebook.com/dyin.to.be.ryan" target="blank" title="My Facebook">
                             <FB />
                         </a>
+                        <a href="https://www.linkedin.com/in/ryan-preston-walker/" target="blank" title="My LinkedIn">
+                            <LinkedIn />
+                        </a>
                     </div>
                     <div className="bubbles">
                         <div>
@@ -45,6 +49,13 @@ class About extends Component {
                             <h3>Willow</h3>
                         </div>
                     </div>
+                    <p>
+                        Thanks for checking out my site! I've been a developer for almost 4 years now and still love it.{' '}
+                        I'm currently working at Overstock.com as a Front End Developer II in Midvale, Utah.{' '}
+                        I mostly work with React, Redux, Less, Webpack, and Nodejs on a daily basis.{' '}
+                        In my free time I like to game, make music, and operate my side business{' '}
+                        <a href="https://www.superiormarketingdesign.com" target="blank">Make Me Superior</a>.
+                    </p>
                 </div>
             </Fragment>
         );
