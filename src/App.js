@@ -1,11 +1,17 @@
 import React, { Component } from 'react';
 import Granim from 'granim';
+
 // import Logo from './logo.js';
 import './less/App.less';
 import './less/FlipSwitch.less';
+
 import ParticledTitle from './components/ParticledTitle';
 import Skills from './components/Skills';
 import About from './components/About';
+
+import Home from './assets/SVG/home';
+import Brackets from './assets/SVG/brackets';
+import Smile from './assets/SVG/smile';
 
 class App extends Component {
     constructor() {
@@ -35,7 +41,7 @@ class App extends Component {
                         ['#F2BB05', '#f8b500'],
                         ['#FFAE00', '#ff6a00']
                     ],
-                    transitionSpeed: 5000
+                    transitionSpeed: 6000
                 },
                 "green-state": {
                     gradients: [
@@ -43,7 +49,7 @@ class App extends Component {
                         ['#43C6AC', '#F8FFAE'],
                         ['#DCE35B', '#45B649']
                     ],
-                    transitionSpeed: 5000
+                    transitionSpeed: 10000
                 }
             }
         });
@@ -75,7 +81,7 @@ class App extends Component {
                             this.setState({ active: 1 });
                         }}
                     >
-                        1
+                        <Home />
                     </button>
                     <button
                         className={`btn-two ${this.state.active === 2 ? 'active' : ''}`}
@@ -84,7 +90,7 @@ class App extends Component {
                             this.setState({ active: 2 });
                         }}
                     >
-                        2
+                        <Brackets />
                     </button>
                     <button
                         className={`btn-three ${this.state.active === 3 ? 'active' : ''}`}
@@ -93,7 +99,7 @@ class App extends Component {
                             this.setState({ active: 3 });
                         }}
                     >
-                        3
+                        <Smile />
                     </button>
                 </div>
             </div>

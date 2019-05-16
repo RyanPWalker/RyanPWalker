@@ -1,7 +1,7 @@
 @import './variables.less';
 
 .flip-switch-container {
-    bottom: 15%;
+    bottom: 13%;
     display: flex;
     justify-content: space-evenly;
     left: 0;
@@ -9,13 +9,13 @@
     position: fixed;
     right: 0;
     width: 75%;
+
     button {
         border: none;
         border-radius: 50%;
         box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
         cursor: pointer;
-        font-family: sans-serif;
-        font-size: 22px;
+        display: grid;
         height: 60px;
         transition: all 0.3s;
         width: 60px;
@@ -43,7 +43,7 @@
     }
 }
 
-@media @md {
+@media @md, @md-height {
     .flip-switch-container {
         bottom: 5%;
     }

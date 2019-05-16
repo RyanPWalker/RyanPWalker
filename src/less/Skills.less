@@ -19,6 +19,7 @@
 
 .skills-container {
     background-color: rgba(37, 37, 37, 0.23);
+    border-radius: 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -40,7 +41,7 @@
     width: 80px;
 }
 
-@media @md {
+@media @md, @sm-height {
     .skills-container {
         width: 90%;
     }
@@ -49,5 +50,13 @@
         height: 60px;
         margin: 0 5px;
         width: 60px;
+    }
+}
+
+@media @md-height {
+    .skills-container {
+        > div {
+            margin: 15px 0;
+        }
     }
 }

@@ -1,10 +1,19 @@
 import React, { Component } from 'react';
+import '../less/ParticledTitle.less';
 
 class ParticledTitle extends Component {
     componentDidMount() {
-        const css = 'text-shadow: -1px -1px hsl(125, 100%, 20%), 1px 1px hsl(125, 100%, 25%), 3px 2px hsl(125, 100%, 30%), 5px 3px hsl(125, 100%, 35%), 7px 4px hsl(125, 100%, 40%), 9px 5px hsl(125, 100%, 45%), 11px 6px hsl(125, 100%, 50%); font-size: 50px; color: rgb(203, 23, 47);';
+        const css = 'text-shadow: -1px -1px #ff6000, 1px 1px orange, 3px 2px yellow, 5px 3px yellowgreen, 7px 4px green, 9px 5px turquoise, 11px 6px #34b2ff; 13px 7px #9c40e0; font-size: 60px; color: rgb(203, 23, 47);';
         console.log('%c Hello World ', css);
         console.log("%cProudly made with React 16.8", 'color: #08BDBD');
+        /*
+         ______     __  __     ______     __   __     ______
+        /\  == \   /\ \_\ \   /\  __ \   /\ "-.\ \   /\  __ \
+        \ \  __<   \ \____ \  \ \  __ \  \ \ \-.  \  \ \ \/\ \
+         \ \_\ \_\  \/\_____\  \ \_\ \_\  \ \_\\"\_\  \ \_____\
+          \/_/ /_/   \/_____/   \/_/\/_/   \/_/ \/_/   \/_____/
+
+        */
 
         var canvas = document.querySelector("#scene"),
         ctx = canvas.getContext("2d"),
@@ -113,7 +122,7 @@ class ParticledTitle extends Component {
 
         function onMouseClick(){
             radius++;
-            if(radius ===5){
+            if (radius === 5) {
                 radius = 0;
             }
         }
@@ -136,7 +145,12 @@ class ParticledTitle extends Component {
     }
 
     render() {
-        return <canvas id="scene"></canvas>;
+        return (
+            <React.Fragment>
+                <canvas id="scene"></canvas>
+                <div className="title"><h2 className="fade1">Ryan Walker</h2><h2 className="fade2">Web Developer</h2></div>
+            </React.Fragment>
+        );
     }
 }
 

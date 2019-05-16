@@ -8,6 +8,7 @@ import Jquery from '../assets/images/jquery';
 import Triforce from '../assets/images/triforce';
 import Redux from '../assets/images/redux';
 import Expo from '../assets/images/expo';
+import Jest from '../assets/images/jest';
 
 class Skills extends Component {
     componentDidMount() {
@@ -68,8 +69,8 @@ class Skills extends Component {
                         <a href="https://expo.io" target="blank" title="Expo">
                             <Expo />
                         </a>
-                        <a href="http://www.cplusplus.org/" target="blank" title="C++">
-                            <i id="skills" title="C++" className="devicon-cplusplus-line-wordmark colored"></i>
+                        <a href="https://expo.io" target="blank" title="Jest">
+                            <Jest />
                         </a>
                         <a href="https://www.zelda.com/about/" target="blank" title="The Legend of Zelda">
                             <Triforce />

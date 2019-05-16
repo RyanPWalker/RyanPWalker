@@ -18,6 +18,13 @@
 }
 
 .about-container {
+    background-color: rgba(37, 37, 37, 0.23);
+    border-radius: 20px;
+    margin: 0 auto;
+    max-height: 65%;
+    padding: 30px;
+    width: 500px;
+
     svg {
         height: 60px;
         width: 60px;
@@ -46,30 +53,16 @@
 .bubbles {
     display: flex;
     justify-content: center;
-}
+    padding-top: 10px;
 
-// .img1 {
-//     animation-delay: 2s;
-// }
-
-.img2 {
-    animation-delay: 0.5s;
-}
-
-.img3 {
-    animation-delay: 1s;
-}
-
-.img4 {
-    animation-delay: 1.5s;
+    h3 {
+        margin-top: 0;
+    }
 }
 
 .floating{
-    animation-name: floating;
-    -webkit-animation-name: floating;
-
-    animation-duration: 10s;
-    -webkit-animation-duration: 10s;
+    animation: bounce 0.75s infinite alternate;
+    -webkit-animation: bounce 0.75s infinite alternate;
 
     animation-iteration-count: infinite;
     -webkit-animation-iteration-count: infinite;
@@ -79,19 +72,33 @@
     width: 125px;
 }
 
-@keyframes floating {
-    0% {
-        transform: translateX(0);
+.img2 {
+    animation-delay: 0.25s;
+}
+
+.img3 {
+    animation-delay: 0.5s;
+}
+
+.img4 {
+    animation-delay: 0.75s;
+}
+
+@keyframes bounce {
+    from {
+      transform: translateY(0px);
     }
-    25% {
-         transform: translateX(20px);
+    to {
+      transform: translateY(-15px);
     }
-    75% {
-        transform:translateX(-20px);
-    }
-    100% {
-        transform: translateX(0);
-    }
+}
+@-webkit-keyframes bounce {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-15px);
+  }
 }
 
 /* Standard syntax */
@@ -119,13 +126,17 @@
     }
 }
 
-@media @md {
+@media @md, @md-height {
     .floating {
         height: 80px;
         width: 80px;
     }
-    .about-container p {
-        font-size: 18px;
-        padding: 0 15px;
+    .about-container {
+        width: 75%;
+
+        p {
+            font-size: 16px;
+            margin: 0 auto;
+        }
     }
 }
