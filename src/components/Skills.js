@@ -69,7 +69,7 @@ class Skills extends Component {
                         <a href="https://expo.io" target="blank" title="Expo">
                             <Expo />
                         </a>
-                        <a href="https://expo.io" target="blank" title="Jest">
+                        <a href="https://jestjs.io/" target="blank" title="Jest">
                             <Jest />
                         </a>
                         <a href="https://www.zelda.com/about/" target="blank" title="The Legend of Zelda">
