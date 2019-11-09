@@ -27,19 +27,19 @@ export default () => (
             </div>
             <div className="bubbles">
                 <div>
-                    <img className="floating img1" src="https://github.com/RyanPWalker/RyanPWalker/blob/master/src/assets/images/Handsome.jpg" alt="Me" />
+                    <img className="floating img1" src="http://github.com/RyanPWalker/RyanPWalker/blob/master/src/assets/images/Handsome.jpg" alt="Me" />
                     <h3>Me</h3>
                 </div>
                 <div className="">
-                    <img className="floating img2" src="https://github.com/RyanPWalker/RyanPWalker/blob/master/src/assets/images/Maddy.jpg" alt="My Wife Maddy" />
+                    <img className="floating img2" src="http://github.com/RyanPWalker/RyanPWalker/blob/master/src/assets/images/Maddy.jpg" alt="My Wife Maddy" />
                     <h3>Maddy</h3>
                 </div>
                 <div className="">
-                    <img className="floating img3" src="https://github.com/RyanPWalker/RyanPWalker/blob/master/src/assets/images/cody.jpg" alt="My crazy dog Cody" />
+                    <img className="floating img3" src="http://github.com/RyanPWalker/RyanPWalker/blob/master/src/assets/images/cody.jpg" alt="My crazy dog Cody" />
                     <h3>Cody</h3>
                 </div>
                 <div className="">
-                    <img className="floating img4" src="https://github.com/RyanPWalker/RyanPWalker/blob/master/src/assets/images/willow.jpg" alt="My cuddly dog Willow" />
+                    <img className="floating img4" src="http://github.com/RyanPWalker/RyanPWalker/blob/master/src/assets/images/willow.jpg" alt="My cuddly dog Willow" />
                     <h3>Willow</h3>
                 </div>
             </div>
