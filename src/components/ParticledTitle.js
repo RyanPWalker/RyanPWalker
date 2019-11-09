@@ -1,8 +1,8 @@
-import React, { Component } from 'react';
+import React, { Fragment, useEffect } from 'react';
 import '../less/ParticledTitle.less';
 
-class ParticledTitle extends Component {
-    componentDidMount() {
+export default () => {
+    useEffect(() => {
         var canvas = document.querySelector("#scene"),
         ctx = canvas.getContext("2d"),
         particles = [],
@@ -130,16 +130,12 @@ class ParticledTitle extends Component {
         window.addEventListener("touchend", onTouchEnd);
         initScene();
         requestAnimationFrame(render);
-    }
+    }, []);
 
-    render() {
-        return (
-            <React.Fragment>
-                <canvas id="scene"></canvas>
-                <div className="title"><h2 className="fade1">Ryan Walker</h2><h2 className="fade2">Web Developer</h2></div>
-            </React.Fragment>
-        );
-    }
-}
-
-export default ParticledTitle;
+    return (
+        <Fragment>
+            <canvas id="scene"></canvas>
+            <div className="title"><h2 className="fade1">Ryan Walker</h2><h2 className="fade2">Web Developer</h2></div>
+        </Fragment>
+    );
+};
