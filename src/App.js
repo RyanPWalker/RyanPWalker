@@ -1,27 +1,28 @@
-import React, { Component } from 'react';
+import React, { useEffect, useState } from 'react';
 import Granim from 'granim';
 
 // import Logo from './logo.js';
 import './less/App.less';
 import './less/FlipSwitch.less';
 
+// Components
 import ParticledTitle from './components/ParticledTitle';
 import Skills from './components/Skills';
 import About from './components/About';
 
+// Assets
 import Home from './assets/SVG/home';
 import Brackets from './assets/SVG/brackets';
 import Smile from './assets/SVG/smile';
 
-class App extends Component {
-    constructor() {
-        super();
-        this.state = { active: 1, granimInstance: {} }
-    }
-    componentDidMount() {
+export default () => {
+    const [active, setActive] = useState(1);
+    const [granimInstance, setGranimInstance] = useState(1);
+
+    useEffect(() => {
         const css = 'text-shadow: -1px -1px #ff6000, 1px 1px orange, 3px 2px yellow, 5px 3px yellowgreen, 7px 4px green, 9px 5px turquoise, 11px 6px #34b2ff; 13px 7px #9c40e0; font-size: 60px; color: rgb(203, 23, 47);';
         console.log('%c Hello World ', css);
-        console.log("%cProudly made with React 16.8", 'color: #08BDBD');
+        console.log("%cProudly made with React 16.11", 'color: #08BDBD');
         /*
          ______     __  __     ______     __   __     ______
         /\  == \   /\ \_\ \   /\  __ \   /\ "-.\ \   /\  __ \
@@ -30,7 +31,7 @@ class App extends Component {
           \/_/ /_/   \/_____/   \/_/\/_/   \/_/ \/_/   \/_____/
         */
 
-        const granimInstance = new Granim({
+        const newGranimInstance = new Granim({
             element: '#canvas-interactive',
             name: 'interactive-gradient',
             elToSetClassOn: '.App',
@@ -64,10 +65,11 @@ class App extends Component {
                 }
             }
         });
-        this.setState({ granimInstance });
-    }
-    renderComponent = () => {
-        switch(this.state.active) {
+        setGranimInstance(newGranimInstance);
+    }, []);
+
+    const renderComponent = () => {
+        switch(active) {
             case 1: {
                 return <ParticledTitle />;
             }
@@ -79,43 +81,40 @@ class App extends Component {
             }
         }
     }
-    render() {
-        return (
-            <div className="App">
-                {this.renderComponent()}
-                <canvas id="canvas-interactive"></canvas>
-                <div className="flip-switch-container">
-                    <button
-                        className={`btn-one ${this.state.active === 1 ? 'active' : ''}`}
-                        onClick={() => {
-                            this.state.granimInstance.changeState('default-state');
-                            this.setState({ active: 1 });
-                        }}
-                    >
-                        <Home />
-                    </button>
-                    <button
-                        className={`btn-two ${this.state.active === 2 ? 'active' : ''}`}
-                        onClick={() => {
-                            this.state.granimInstance.changeState('green-state');
-                            this.setState({ active: 2 });
-                        }}
-                    >
-                        <Brackets />
-                    </button>
-                    <button
-                        className={`btn-three ${this.state.active === 3 ? 'active' : ''}`}
-                        onClick={() => {
-                            this.state.granimInstance.changeState('orange-state');
-                            this.setState({ active: 3 });
-                        }}
-                    >
-                        <Smile />
-                    </button>
-                </div>
-            </div>
-        );
-    }
-}
 
-export default App;
+    return (
+        <div className="App">
+            {renderComponent()}
+            <canvas id="canvas-interactive"></canvas>
+            <div className="flip-switch-container">
+                <button
+                    className={`btn-one ${active === 1 ? 'active' : ''}`}
+                    onClick={() => {
+                        granimInstance.changeState('default-state');
+                        setActive(1);
+                    }}
+                >
+                    <Home />
+                </button>
+                <button
+                    className={`btn-two ${active === 2 ? 'active' : ''}`}
+                    onClick={() => {
+                        granimInstance.changeState('green-state');
+                        setActive(2);
+                    }}
+                >
+                    <Brackets />
+                </button>
+                <button
+                    className={`btn-three ${active === 3 ? 'active' : ''}`}
+                    onClick={() => {
+                        granimInstance.changeState('orange-state');
+                        setActive(3);
+                    }}
+                >
+                    <Smile />
+                </button>
+            </div>
+        </div>
+    );
+}
