@@ -47,7 +47,7 @@ export default () => (
                     <i id="skills" title="NodeJS" className="devicon-nodejs-plain colored"></i>
                 </a>
                 <a href="https://git-scm.com/" target="blank">
-                    <i id="skills" title="Git" className="devicon-git-plain-wordmark colored "></i>
+                    <i id="skills" title="Git" className="devicon-git-plain-wordmark colored"></i>
                 </a>
                 <a href="https://jquery.com/" target="blank" title="Jquery">
                     <Jquery />
@@ -60,14 +60,14 @@ export default () => (
                 <a href="https://www.adobe.com/products/illustrator.html" target="blank">
                     <i id="skills" title="Adobe Illustrator" className="devicon-illustrator-plain colored"></i>
                 </a>
-                <a href="https://expo.io" target="blank" title="Expo">
-                    <Expo />
-                </a>
                 <a href="https://jestjs.io/" target="blank" title="Jest">
                     <Jest />
                 </a>
                 <a href="https://www.zelda.com/about/" target="blank" title="The Legend of Zelda">
                     <Triforce />
+                </a>
+                <a href="https://www.drumeo.com/beat/3-studies-that-prove-drummers-are-the-best/" target="blank" title="Drum set" className="drums">
+                    <img src="http://www.drumchat.com/images/smilies/drumset-3.gif" id="skills" />
                 </a>
             </div>
         </div>
