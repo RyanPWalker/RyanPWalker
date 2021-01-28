@@ -44,11 +44,13 @@ export default () => (
                 </div>
             </div>
             <p>
-                Thanks for checking out my site! I've been a developer for almost 4 years now and still love it.{' '}
+                Thanks for checking out my site! I've been a developer for 5 years now and still love it.{' '}
                 I'm currently working at Overstock.com as a Front End Developer II in Midvale, Utah.{' '}
                 I mostly work with React, Redux, Less, Webpack, and Nodejs on a daily basis.{' '}
-                In my free time I like to game, make music, and operate my side business{' '}
-                <a href="https://www.superiormarketingdesign.com" target="blank">Make Me Superior</a>.
+                In my free time I like to game, make music, and operate my side businesses{' '}
+                <a href="https://www.superiormarketingdesign.com" target="blank" className="rainbow-link">Make Me Superior</a>{' '}
+                and <a href="https://bluebyrd.io" target="blank" className="rainbow-link">Bluebyrd</a>.{' '}
+                Please reach out and <a href="mailto:ryanprestonwalker@gmail.com" target="blank" title="Email me">connect</a>!
             </p>
         </div>
     </Fragment>
