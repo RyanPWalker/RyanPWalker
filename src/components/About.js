@@ -45,8 +45,8 @@ export default () => (
             </div>
             <p>
                 Thanks for checking out my site! I've been a developer for 5 years now and still love it.{' '}
-                I'm currently working at Overstock.com as a Front End Developer II in Midvale, Utah.{' '}
-                I mostly work with React, Redux, Less, Webpack, and Nodejs on a daily basis.{' '}
+                I'm currently working at Overstock.com as a Senior Front End Developer in Midvale, Utah.{' '}
+                I mostly work with Reactjs, Redux, Less, Webpack, and Nodejs on a daily basis.{' '}
                 In my free time I like to game, make music, and operate my side businesses{' '}
                 <a href="https://www.superiormarketingdesign.com" target="blank" className="rainbow-link">Make Me Superior</a>{' '}
                 and <a href="https://bluebyrd.io" target="blank" className="rainbow-link">Bluebyrd</a>.{' '}
