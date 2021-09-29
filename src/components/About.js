@@ -48,8 +48,9 @@ export default () => (
                 I'm currently working at Overstock.com as a Senior Front End Developer in Midvale, Utah.{' '}
                 I mostly work with Reactjs, Redux, Less, Webpack, and Nodejs on a daily basis.{' '}
                 In my free time I like to game, make music, and operate my side businesses{' '}
-                <a href="https://www.superiormarketingdesign.com" target="blank" className="rainbow-link">Make Me Superior</a>{' '}
-                and <a href="https://bluebyrd.io" target="blank" className="rainbow-link">Bluebyrd</a>.{' '}
+                <a href="https://www.rhynosaxeandarchery.com/" target="blank" className="rainbow-link">Rhyno's Axe Throwing and Archery</a>
+                {' '}and{' '}
+                <a href="https://www.superiormarketingdesign.com" target="blank" className="rainbow-link">Make Me Superior</a>.{' '}
                 Please reach out and <a href="mailto:ryanprestonwalker@gmail.com" target="blank" title="Email me">connect</a>!
             </p>
         </div>
